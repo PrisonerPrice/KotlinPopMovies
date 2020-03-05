@@ -16,7 +16,7 @@ class Movie(
     @ColumnInfo val comment: String,
     @ColumnInfo(name = "trailer_url_1") val trailerUrl1: String,
     @ColumnInfo(name = "trailer_url_2") val trailerUrl2: String,
-    @ColumnInfo(name = "is_liked") val isLiked: Int,
+    @ColumnInfo(name = "is_liked") var isLiked: Int,
     @ColumnInfo(name = "is_popular") val isPopular: Int,
     @ColumnInfo(name = "is_highly_ranked") val isHighlyRanked: Int,
     @ColumnInfo(name = "updated_at") val updatedAt: Long
